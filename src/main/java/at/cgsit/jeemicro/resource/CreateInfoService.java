@@ -1,5 +1,6 @@
 package at.cgsit.jeemicro.resource;
 
+import at.cgsit.jeemicro.resource.dto.SimpleDTO;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
@@ -24,4 +25,21 @@ public class CreateInfoService {
 
         return l.toString();
     }
+
+    @GET
+    @Path("ext")
+    @Produces(MediaType.APPLICATION_JSON)
+    public SimpleDTO helloSimpleDTO() {
+        LOG.info("create info called ");
+
+        SimpleDTO dto = new SimpleDTO();
+        Long l = new Random().nextLong();
+
+        dto.setValueA(l.toString());
+        dto.setValueB(l.toString());
+        return dto;
+    }
+
+
+
 }
