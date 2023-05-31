@@ -37,6 +37,11 @@ public class CreateInfoService {
 
         dto.setValueA(l.toString());
         dto.setValueB(l.toString());
+
+        // für den test mit retry und fallback
+        //if(true)
+        //  throw new RuntimeException("myerror");
+
         return dto;
     }
 
