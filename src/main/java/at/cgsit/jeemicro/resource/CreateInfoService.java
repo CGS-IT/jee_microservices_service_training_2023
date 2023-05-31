@@ -30,7 +30,7 @@ public class CreateInfoService {
     @Path("ext")
     @Produces(MediaType.APPLICATION_JSON)
     public SimpleDTO helloSimpleDTO() {
-        LOG.info("create info called ");
+        LOG.info("create info SimpleDTO called");
 
         SimpleDTO dto = new SimpleDTO();
         Long l = new Random().nextLong();
