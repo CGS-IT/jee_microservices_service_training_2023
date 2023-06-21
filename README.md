@@ -1,4 +1,5 @@
-# kurs_jeemicro_service
+# Workshop : JEE Microservice Development with Quarkus
+## kurs_jeemicro_service
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
