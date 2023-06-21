@@ -10,6 +10,11 @@ import org.jboss.logging.Logger;
 
 import java.util.Random;
 
+/**
+ * service which creates some info
+ * <p>
+ * is used for testing to be called from the client
+ */
 @Path("/createinfo")
 public class CreateInfoService {
 
